@@ -31,8 +31,9 @@ body{
 }
 
 .header-box{
-    background-color: cornsilk;
-    border: 2px solid black;
+    /* background-color: cornsilk; */
+    background-color: rgba(0, 0, 0, 0.473);
+    /* border: 2px solid ; */
     /* margin:.3rem  .7rem; */
     width: 100%;
 
@@ -41,6 +42,7 @@ body{
 
 .header{
   font-family: 'Source Serif Pro', serif;
+  color: bisque;
  font-size: 5rem;
  text-align: center;
  padding: 1.4rem;
@@ -111,7 +113,7 @@ footer{
 .night{
     /* background-color: black; */
     position: absolute;/* position: relative; */
-    width: 80%;
+    width: 78%;
     height: 35%;
     top :50%;
     transform: rotateZ(30deg);
