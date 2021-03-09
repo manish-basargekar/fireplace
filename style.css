@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  *,
+  *:before,
+  *::after{
+    box-sizing:inherit;
+  }
+  
+  html{
+    box-sizing:border-box;
+    font-size:62.5%;
+  }
+
+
+.hug{
+    color: blanchedalmond;
+}
+
+body{
+    overflow: none;
+    background: radial-gradient(ellipse at top, #0D1E31, #111)
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.header-box{
+    background-color: cornsilk;
+    border: 2px solid black;
+    /* margin:.3rem  .7rem; */
+    width: fit-content;
+
+}
+
+
+.header{
+ font-family: 'Fjalla One', sans-serif;
+ font-size: 5rem;
+ text-align: center;
+ padding: 1.4rem;
+
+}
+
+.creator{
+    float: left;
+    border: 1px solid black;
+    border-radius: 100px;
+    text-decoration: none;
+    background-color: magenta;
+    padding: .2rem;
+    
+}
+
+.message-box{
+    margin: 1rem 0;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    padding: .5rem;
+    background-color: bisque;
+}
+
+
+.message{
+    font-family: 'Akaya Telivigala', cursive;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 1rem;
+    width: fit-content;
+}
+
+
+
+.gif{
+    width: 100%;
+    /* border: 2px solid black; */
+}
+
+footer{
+    font-family: 'Akaya Telivigala', cursive;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: gray;
+    padding: .3rem;
+    color: blanchedalmond;
+    text-align: center;
+}
+
+/* background */
+.night-container{
+    /* height: 100vh; */
+    flex: 1;
+    min-height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(ellipse at bottom, #0D1E31, #111);
+    overflow: hidden;
+}
+
+
+
+
+.night{
+    /* background-color: black; */
+    position: absolute;/* position: relative; */
+    width: 80%;
+    height: 35%;
+    top :50%;
+    transform: rotateZ(30deg);
+    overflow: hidden;
+  }
+  
+  .star{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 4px;
+    background: linear-gradient(-45deg, #5F91FF, rgba(0, 0, 255, 0));
+    border-radius: 999px;
+    filter: drop-shadow(0 0 6px #699BFF);
+    animation: tail 3s ease-in-out infinite,
+               falling 3s ease-in-out infinite;
+  }
+  
+  @keyframes tail{
+    0%{
+      width: 0;
+    }
+    30%{
+      width: 100px;
+    }
+    100%{
+      width: 0;
+    }
+  }
+  
+  @keyframes falling{
+    0%{
+      transform: translateX(0);
+    }
+    100%{
+      transform: translateX(300px);
+    }
+  }
+  
+  .star::before, .star::after{
+    content: '';
+    position: absolute;
+    top: calc(50% - 2px);
+    right: 0;
+    height: 4px;
+    background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #5F91FF, rgba(0, 0, 255, 0));
+    border-radius: 100%;
+    transform: translateX(50%) rotateZ(45deg);
+    animation: shining 3s ease-in-out infinite;
+  }
+  
+  @keyframes shining{
+    0%{
+      width: 0;
+    }
+    50%{
+      width: 30px;
+    }
+    100%{
+      width: 0;
+    }
+  }
+  
+  .star::after{
+    transform: translateX(50%) rotateZ(-45deg);
+  }
+  
+  .star:nth-child(1){
+    top: calc(50% - 100px);
+    left: calc(50% - 250px);
+    animation-delay: 1s;
+  }
+  
+  .star:nth-child(1)::before, .star:nth-child(1)::after{
+    animation-delay: 1s;
+  }
+  
+  .star:nth-child(2){
+    top: calc(50% - 50px);
+    left: calc(50% - 200px);
+    animation-delay: 1.2s;
+  }
+  
+  .star:nth-child(2)::before, .star:nth-child(2)::after{
+    animation-delay: 1.2s;
+  }
+  
+  .star:nth-child(3){
+    top: calc(50% - 0px);
+    left: calc(50% - 150px);
+    animation-delay: 1.4s;
+  }
+  
+  .star:nth-child(3)::before, .star:nth-child(3)::after{
+    animation-delay: 1.4s;
+  }
+  
+  .star:nth-child(4){
+    top: calc(50% - -50px);
+    left: calc(50% - 200px);
+    animation-delay: 1.6s;
+  }
+  
+  .star:nth-child(4)::before, .star:nth-child(4)::after{
+    animation-delay: 1.6s;
+  }
+  
+  .star:nth-child(5){
+    top: calc(50% - -100px);
+    left: calc(50% - 250px);
+    animation-delay: 1.8s;
+  }
+  
+  .star:nth-child(5)::before, .star:nth-child(5)::after{
+    animation-delay: 1.8s;
+  }
+        
+
+
+.tower-box{
+    position: absolute;
+    /* background-color: blue; */
+    display: flex;
+    justify-content: end;
+    bottom: 2rem;
+}
+
+.town{
+    /* background-color: goldenrod; */
+    width: 50%;
+    height: 100%;
+    /* right: 0; */
+    /* z-index: 100; */
+}
