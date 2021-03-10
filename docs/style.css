@@ -247,10 +247,28 @@ footer{
     /* background-color: goldenrod; */
     width: 50%;
     height: 100%;
-    /* right: 0; */
-    /* z-index: 100; */
 }
 
+.music-box{
+position: absolute;
+/* background-color: violet; */
+top: 53%;
+left: 1%;
+}
+.play-music{
+  z-index: 200;
+  color: wheat;
+}
+
+.playBtn{
+  float: left;
+  z-index: 300;
+  padding: 2rem;
+  border-radius: 100px;
+  background-color: white;
+  width: max-content;
+  border: 4px double black;
+}
 
 /* Media queries */
 
@@ -284,5 +302,8 @@ footer{
   .message{
     font-size: 2.5rem;
     padding: 1.3rem;
+  }
+  .music-box{
+    top: 98%;
   }
 }
