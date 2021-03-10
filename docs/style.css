@@ -46,6 +46,7 @@ body{
  font-size: 5rem;
  text-align: center;
  padding: 1.4rem;
+ padding-bottom: 0;
 
 }
 
@@ -63,7 +64,7 @@ body{
     margin: 1rem 0;
     border-top: 2px solid black;
     border-bottom: 2px solid black;
-    padding: .5rem;
+    padding: .2rem;
     background-color: bisque;
 }
 
@@ -89,7 +90,7 @@ footer{
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: gray;
+    background-color: rgba(0, 0, 0, 0.377);
     padding: .3rem;
     color: blanchedalmond;
     text-align: center;
@@ -248,4 +249,40 @@ footer{
     height: 100%;
     /* right: 0; */
     /* z-index: 100; */
+}
+
+
+/* Media queries */
+
+@media only screen and (min-width: 1300px) {
+  .tower-box{
+    position: absolute;
+    transform: translate(15rem,15rem);
+  }
+}
+@media only screen and (min-width: 1700px) {
+  .night{
+    /* background-color: black; */
+    bottom: 0;
+    top: 99%;
+    right: 20%;
+    height: 50%;
+    width: 30%;
+  }
+
+  .tower-box{
+    position: absolute;
+    /* background-color: brown; */
+    transform: translate(45rem,65rem);
+  }
+  .town{
+    position: relative;
+    bottom: 0;
+    /* width: 60%; */
+    height: auto;
+  }
+  .message{
+    font-size: 2.5rem;
+    padding: 1.3rem;
+  }
 }
