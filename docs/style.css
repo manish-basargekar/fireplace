@@ -112,10 +112,10 @@ footer{
 
 
 .night{
-    /* background-color: black; */
+    background-color: black;
     position: absolute;/* position: relative; */
     width: 78%;
-    height: 35%;
+    height: 40%;
     top :50%;
     transform: rotateZ(30deg);
     overflow: hidden;
