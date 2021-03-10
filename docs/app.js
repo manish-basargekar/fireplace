@@ -1,8 +1,4 @@
-const squirtle = [
-    
-]
 console.log("Its all vanilla My friend...");
-console.log("");
 let button = document.getElementById("play");
 let audio = document.getElementById("music");
 
