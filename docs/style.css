@@ -112,7 +112,7 @@ footer{
 
 
 .night{
-    background-color: black;
+    /* background-color: black; stars */
     position: absolute;/* position: relative; */
     width: 78%;
     height: 40%;
